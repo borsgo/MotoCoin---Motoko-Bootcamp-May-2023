@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "poll_backend": {
+      "main": "src/poll_backend/main.mo",
+      "type": "motoko"
+    },
+    "poll_frontend": {
+      "dependencies": [
+        "poll_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/poll_frontend/src/index.html"
+      },
+      "source": [
+        "src/poll_frontend/assets",
+        "dist/poll_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
