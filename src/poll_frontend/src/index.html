@@ -1,24 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>poll</title>
+    <title>MotoCoin-Demo</title>
     <base href="/" />
-    <link rel="icon" href="favicon.ico" />
-    <link type="text/css" rel="stylesheet" href="main.css" />
-  </head>
-  <body>
-    <main>
-      <img src="logo2.svg" alt="DFINITY logo" />
-      <br />
-      <br />
-      <form action="#">
-        <label for="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="image/png" href="Motoko.png" />
+    <link rel="image/svg" href="git.svg" />
+</head>
+<body>
+  <main>
+    <header>
+      <section class="cheader">
+        <img src="Motoko.png">
+        <h1>Coin</h1>
+      </section>
+    </header>
+    <section class="container" id="blockLogin">
+        <form id="formLogin">
+          <article class="post">
+            <h2>User Name</h2>
+              <p>
+                <input id="#userName" type="text" />
+              </p>  
+            <h2>Principal ID</h2>
+              <p>
+                <input id="#principalID" type="text" />
+              </p>  
+              <p>
+                <button id="btnLogin" type="submit">Login</button>
+              </p>
+          </article>
+          <p id="loginMsg"></p>
       </form>
-      <section id="greeting"></section>
-    </main>
-  </body>
+    </section>
+    <section class="container" id="tokenInfo" hidden="true">
+      <form id="formLogout">
+        <article class="post">
+            <h2>Token Info</h2>
+            <p id="tokenName"></p>
+            <p id="tokenSymbol"></p>
+            <p id="totalSupply"></p>
+            <p><button id="logOut" type="submit">Logout</button></p>
+        </article>
+      </form>
+    </section>
+    <section class="container" id="identityInfo" hidden="true">
+      <form id="formInfo">
+        <article class="post">
+            <h2 id="welcome"></h2>
+            <p id="balance"></p>
+            <p><button id="trasnfer" type="submit">Make Transfer</button></p>
+        </article>
+      </form>
+    </section>
+    <section class="container" id="blockTrans" hidden="true">
+      <form id="sendCoin">
+        <article class="post">
+            <h2>Transfer</h2>
+            <p>To: <input id="#toID" type="text"/> <button id="random" type="submit" title="give me one">>></button></p>
+            <p>Amount:  <input id="#amount" type="number"/>  MOC</p>
+            <p><button id="sendCoins" type="submit">Transfer Coins</button></p>
+            <button style="margin: 0.5rem;" class="btnStyle" id="seeTrans" type="submit">Transactions</button>
+        </article>
+        <p id="logTrans"></p>
+      </form>
+    </section>
+    <section class="container" id="blockShow" hidden="true">
+      <form id="showTrans">
+        <article class="post">
+            <h2>MOC Transactions</h2>
+            <p id="sent" style="font-size: 0.7rem;"></p>
+            <p><button id="refresh" type="submit">Refresh</button></p>
+        </article>
+        <p id="logRefresh"></p>
+      </form>
+    </section>
+    <footer>
+        <section class="cfooter">
+          <a href="mailto:info@borsgo.com"><img src="git.svg"></a>
+          Copyright 2023
+          <a class="cimg" href="mailto:info@borsgo.com">Contact</a>
+        </section>
+    </footer>
+  </main>
+</body>
 </html>

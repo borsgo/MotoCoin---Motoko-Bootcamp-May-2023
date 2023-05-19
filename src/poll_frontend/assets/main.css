@@ -1,37 +1,104 @@
-body {
-    font-family: sans-serif;
-    font-size: 1.5rem;
+html {
+    font-family: 'Montserrat', sans-serif;
 }
 
-img {
-    max-width: 50vw;
-    max-height: 25vw;
-    display: block;
-    margin: auto;
+body{
+    margin: 0;
+    background-color: #efefef;
 }
 
-form {
-    display: flex;
-    justify-content: center;
-    gap: 0.5em;
-    flex-flow: row wrap;
-    max-width: 40vw;
-    margin: auto;
-    align-items: baseline;
+button {
+    transition: all 0.5s ease;
+    background-color: #364552;
+    color: #fff;
+    padding: 0.8rem 0.8rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
 }
 
-button[type="submit"] {
-    padding: 5px 20px;
-    margin: 10px auto;
+input {
+    padding: 0.5rem 0.5rem;
+    border: solid 0.1rem #c5c5c5;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+button:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+    enable-background: #cfdae4 ;
+    background-color: #48759c;
+}
+
+.cheader{
+    width: 380px;
+    margin: auto auto;
+}
+
+header {
+    background-color: #364552;
+    color: white;
+    padding: 1rem 1rem;
+}
+
+header section img{
+    float: left;
+    height: 10rem;
+    margin: -2.5rem;
+}
+
+header section h1{
+    font-size: 4rem;
+}
+
+.container{
+    width: 400px;
+    margin: auto auto;
+}
+
+section article {
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+}
+
+section article:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+
+}
+
+section article h2, section article p {
+    margin: 1rem;
+    text-align: center;
+}
+
+.cfooter{
+    width: 380px;
+    margin: auto auto;
+    text-align: center;
+}
+
+footer{
+    background-color: #222;
+    color: #fff;
+    padding: 3rem 3rem; 
+}
+
+.cimg{
     float: right;
+    transition: color 0.3s ease;
+    color: #fff;
+    text-decoration: none;
 }
 
-#greeting {
-    margin: 10px auto;
-    padding: 10px 60px;
-    border: 1px solid #222;
+footer a:hover {
+    color: cornflowerblue;
 }
 
-#greeting:empty {
-    display: none;
+footer section a img{
+    float: left;
+    height: 3rem;
+    margin: -1.5rem;
 }

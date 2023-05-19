@@ -1,12 +1,12 @@
 {
   "canisters": {
-    "poll_backend": {
-      "main": "src/poll_backend/main.mo",
+    "poll_motoCoin": {
+      "main": "src/poll_motoCoin/main.mo",
       "type": "motoko"
     },
     "poll_frontend": {
       "dependencies": [
-        "poll_backend"
+        "poll_motoCoin"
       ],
       "frontend": {
         "entrypoint": "src/poll_frontend/src/index.html"
